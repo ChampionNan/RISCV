@@ -1,0 +1,57 @@
+
+test-csr2.om:     file format elf32-littleriscv
+
+
+Disassembly of section .text:
+
+00010080 <_start>:
+   10080:	01100093          	li	ra,17
+   10084:	01200113          	li	sp,18
+   10088:	01300193          	li	gp,19
+   1008c:	01400213          	li	tp,20
+   10090:	01500293          	li	t0,21
+   10094:	01600313          	li	t1,22
+   10098:	00100393          	li	t2,1
+
+0001009c <test_1>:
+   1009c:	00a09473          	csrrw	s0,0xa,ra
+
+000100a0 <test_2>:
+   100a0:	00b124f3          	csrrs	s1,0xb,sp
+
+000100a4 <test_3_1>:
+   100a4:	00c2a573          	csrrs	a0,0xc,t0
+
+000100a8 <test_3_2>:
+   100a8:	00c1b5f3          	csrrc	a1,0xc,gp
+
+000100ac <test_4>:
+   100ac:	00dd5673          	csrrwi	a2,0xd,26
+
+000100b0 <test_5>:
+   100b0:	00ede6f3          	csrrsi	a3,0xe,27
+
+000100b4 <test_6_1>:
+   100b4:	00ffeaf3          	csrrsi	s5,0xf,31
+
+000100b8 <test_6_2>:
+   100b8:	00fe7773          	csrrci	a4,0xf,28
+
+000100bc <test_7>:
+   100bc:	00a097f3          	csrrw	a5,0xa,ra
+
+000100c0 <test_8>:
+   100c0:	00b09873          	csrrw	a6,0xb,ra
+
+000100c4 <test_9>:
+   100c4:	00c098f3          	csrrw	a7,0xc,ra
+
+000100c8 <test_10>:
+   100c8:	00d09973          	csrrw	s2,0xd,ra
+
+000100cc <test_11>:
+   100cc:	00e099f3          	csrrw	s3,0xe,ra
+
+000100d0 <test_12>:
+   100d0:	00f09a73          	csrrw	s4,0xf,ra
+	...

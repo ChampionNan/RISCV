@@ -1,0 +1,73 @@
+
+test-move.om:     file format elf32-littleriscv
+
+
+Disassembly of section .text:
+
+00010080 <_start>:
+   10080:	00000013          	nop
+   10084:	00700093          	li	ra,7
+
+00010088 <test_1>:
+   10088:	00109113          	slli	sp,ra,0x1
+
+0001008c <test_2>:
+   1008c:	0010d193          	srli	gp,ra,0x1
+
+00010090 <test_3>:
+   10090:	4010d213          	srai	tp,ra,0x1
+
+00010094 <test_4>:
+   10094:	007082b3          	add	t0,ra,t2
+
+00010098 <test_5>:
+   10098:	40308333          	sub	t1,ra,gp
+
+0001009c <test_6>:
+   1009c:	003093b3          	sll	t2,ra,gp
+
+000100a0 <test_7>:
+   100a0:	0020a433          	slt	s0,ra,sp
+
+000100a4 <test_8>:
+   100a4:	0020b4b3          	sltu	s1,ra,sp
+
+000100a8 <test_9>:
+   100a8:	0000c533          	xor	a0,ra,zero
+
+000100ac <test_10>:
+   100ac:	0030d5b3          	srl	a1,ra,gp
+
+000100b0 <test_11>:
+   100b0:	4030d633          	sra	a2,ra,gp
+
+000100b4 <test_12>:
+   100b4:	0020e6b3          	or	a3,ra,sp
+
+000100b8 <test_13>:
+   100b8:	0020f733          	and	a4,ra,sp
+
+000100bc <test_14>:
+   100bc:	00108793          	addi	a5,ra,1
+
+000100c0 <test_15>:
+   100c0:	0080a813          	slti	a6,ra,8
+
+000100c4 <test_16>:
+   100c4:	0080b893          	sltiu	a7,ra,8
+
+000100c8 <test_17>:
+   100c8:	0080c913          	xori	s2,ra,8
+
+000100cc <test_18>:
+   100cc:	0100e993          	ori	s3,ra,16
+
+000100d0 <test_19>:
+   100d0:	0010fa13          	andi	s4,ra,1
+
+000100d4 <test_20>:
+   100d4:	fffffab7          	lui	s5,0xfffff
+
+000100d8 <test_21>:
+   100d8:	00004b17          	auipc	s6,0x4
+	...
